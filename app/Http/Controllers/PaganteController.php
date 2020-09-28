@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 class PaganteController extends Controller
 {
 
-    public function paganti(){
+    public function index(){
 
         $paganti = Pagante::all();
 
-        return view('home', compact('paganti'));
+        return view('paganti.paganti-index', compact('paganti'));
     }
 
 }

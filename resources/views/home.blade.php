@@ -1,19 +1,12 @@
-@extends('layouts/main_layout')
-
+@extends('layouts.main-layout')
 @section('content')
-    <div class="content">
-        
-        <h2>Elenco Paganti</h2>
-
+<div class="content">
+    <h2>Welcome</h2>
+    <div class="nav">
         <ul>
-            @foreach ($paganti as $pagante)
-                <li> ID: {{ $pagante -> id }}
-                    Nome: {{ $pagante -> name }}
-                    {{ $pagante -> lastname }}
-                </li>
-            @endforeach
-
+            <li><a href="{{ route('paganti-index')}}">Paganti</a></li>
+            <li><a href="{{ route('pagamenti-index')}}">Pagamenti</a></li>
         </ul>
-
     </div>
+</div>
 @endsection
