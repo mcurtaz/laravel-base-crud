@@ -9,7 +9,8 @@
                     {{ $pagamento -> status }} &nbsp;
                     {{ $pagamento -> price }}
 
-                    <a href=" {{ Route('pagamento-destroy', $pagamento -> id) }}">delete</a>
+                    <a href=" {{ route('pagamento-edit', $pagamento -> id) }} ">edit</a>
+                    <a href=" {{ route('pagamento-destroy', $pagamento -> id) }}">delete</a>
                 </li>
             @endforeach
         </ul>
