@@ -8,3 +8,17 @@ sulla base di quanto visto a lezione, generare in nuovo progetto la index sulla 
 ### UPDATE:
 
 aggiungere alla repo index + update + delete sull'entita' pagamenti
+
+
+### UPDATE BIS:
+Generare tabella e riempire di dati fake attraverso migration, factory e seeder della seguente entita':
+
+Post:
+- title
+- text
+- category
+- like
+- dislike
+
+
+**NOTE:** like e dislike sono intesi come numero di reazioni da parte degli utenti. Aggiungere semplicemente i file al vecchio progetto modificando l'env
